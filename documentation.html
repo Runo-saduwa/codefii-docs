@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/materialize.css">
+        <!-- <link rel="stylesheet" href="css/bulma.css"> -->
+        <link rel="stylesheet" href="css/ionicons.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body class="relative">
+      
+      
+        <header class="documentation-header">
+            <nav class="nav-wrapper white">
+                <a href="#" class="brand-logo"><img class="brand-img" src="images/codefii.png"></a>
+                <a href="#" class="black-text sidenav-trigger right" data-target="slide-out"><i class="material-icons black-text">menu</i>
+                      
+                 <ul class="right hide-on-med-and-down">
+                     <li><form action=""><input class="input-field" type="text" placeholder="search"></form></li>
+                        <li><a class="black-text" href="index.html">Home</a></li>
+                     <li><a class="black-text" href="#">Documentation</a></li>
+                        <li><a class="black-text" href="">News</a></li>
+                     <li><a class="black-text" href="#">Team</a></li>
+                 </ul>
+            </nav>
+        </header>
+
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+           <div class="container">
+              <div class="center-align"><form action=""><input class="input-field" type="text" placeholder="search"></form></div>
+                <div class="section-container">
+                        <h5 class="section-heading">Getting Started</h6>
+                            <p><a href="index.html" class="section-child">Home</a></p>
+                            <p><a href="#" class="section-child">Installation</a></p>
+                            <p><a href="#" class="section-child">Database Connection</a></p>
+                            <p><a href="#" class="section-child">Deployment</a></p>
+                            <p><a href="#" class="section-child">Using FiiCii</a></p>
+                            <p><a href="#" class="section-child">APIs</a></p>
+                </div>
+
+                <div class="section-container">
+                        <h5 class="section-heading">The Model</h5>
+                            <p><a href="#" class="section-child">Understanding Model & FiiORM</a></p>
+                            <p><a href="#" class="section-child">Techniques in creating a record</a></p>
+                            <p><a href="#" class="section-child">Reading/Fetching record</a></p>
+                            <p><a href="#" class="section-child">Updating record</a></p>
+                            <p><a href="#" class="section-child">Deleting record</a></p>
+                            <p><a href="#" class="section-child">Using Query Buider</a></p>
+                </div>
+                <div class="section-container">
+                        <h5 class="section-heading">The View</h5>
+                            <p><a href="#" class="section-child">The concepts of view</a></p>
+                            <p><a href="#" class="section-child">Understanding view partials</a></p>
+                            <p><a href="#" class="section-child">Sending data to view</a></p>
+                            <p><a href="#" class="section-child">Using Twig Template</a></p>
+                </div>
+                <div class="section-container">
+                        <h5 class="section-heading">The Controller</h5>
+                            <p><a href="#" class="section-child">Understanding Controller</a></p>
+                </div>
+                <div class="section-container">
+                        <h5 class="section-heading">The Admin</h5>
+                            <p><a href="#" class="section-child">Concepts of CodefiiAdmin</a></p>
+                </div>
+                <div class="section-container">
+                        <h5 class="section-heading">The Routes/Routing</h5>
+                            <p><a href="#" class="section-child">Basics of Routing</a></p>
+                </div>
+           </div>
+        </ul>
+          
+
+      <main>
+            <div class="main introduction container">
+                <div class="installation">
+                        <h1 class="section-title">
+                                Installation
+                            </h1>
+                            <hr>
+                            <p class="flow-text">
+                                    The greatest decision you've made so far as a php developer is wanting to use a fast growing tool so let's get started. In the php world, composer is all you need to pull any tool from the php store(Packagist), a place where 95% of the top php project is hosted for remote access via github or any version control system. However, composer can be installed from the official website by visiting <a href="https://getcomposer.org">getcomposer.org</a>, or maybe if you're a big fan of terminal / cmd, swip to it and type in the command below.
+                            </p>
+                              
+                            <pre><code class="language-composer">curl -s https://getcomposer.org/installer | php</code> </pre>
+                           <p class="flow-text">
+                                After a succesful installation, to verifiy if composer is working fine type:
+                           </p>
+                           <pre><code class="language-composer">composer</code></pre>
+               
+                             <div class="section-title">
+                                 Creating A Project
+                             </div>
+                             <pre><code class="language-composer">composer create-project --prefer-dist codefii/codefii yourAppName</code></pre>
+                </div>
+            </div>
+
+            <div class="dbconnection">
+                <div class="container">
+                        <h1 class="section-title">
+                                Database Connection
+                            </h1>
+                            <hr>
+                            <p class="flow-text">
+                                    It doesn't require much stress to configure a working database in codefii. The configuration file is found in the root directory of your codefii app as a .env file. Codefii doesn't support multiple database connection like postgres and Sqlite, it only supports Mysql so all you need is add the neccessary settings and you're good to go.
+                            </p>
+                              
+                            
+                            <pre class="line-numbers"><code class="language-php">
+                                    APP_NAME=Codefii 
+                                    APP_ENV=local
+                                    APP_URL=http://localhost
+                        
+                                    DB_CONNECTION=mysql
+                                    DB_HOST=127.0.0.1
+                                    DB_PORT=3306
+                                    DB_DATABASE=codefii
+                                    DB_USERNAME=root
+                                    DB_PASSWORD=xxxxxx
+                                    DB_PREFIX=null</code></pre>
+                            
+                </div>
+
+                <div class="deployment">
+                      <div class="container">
+                            <h1 class="section-title">
+                                    Deployment
+                                </h1>
+                                <hr>
+                        <p class="flow-text">
+                            Deploying your project is pretty straightforward,the only file that needs to be modified when deploying to shared hosting or vps is the .env which happens to be your database settings and you're good to go.
+                        </p>
+                      </div>
+                </div>
+
+                <div class="usingfiicli">
+                        <div class="container">
+                              <h1 class="section-title">
+                                      Using FiiCli
+                                  </h1>
+                                  <hr>
+                          <p class="flow-text">
+                                FiiCli is a command line interface designed to ease development. The commands are quite few as more command would be added to the documentation as time goes on.
+                          </p>
+                          <pre><code class="language-command">php fii --serve</code></pre>
+                          <p class="flow-text">
+                                The code above launches your project on a default port : <span class="highlight">8080</span>. Following the same pattern, you can aswell specify a port if the default port is been used by another program, i.e:
+                          </p>
+                          <pre><code class="language-command"> php --serve --port=your_port_number</code></pre>
+                        </div>
+                  </div>
+
+                  <div class="apis">
+                        <div class="container">
+                              <h1 class="section-title">
+                                      APIs
+                                  </h1>
+                                  <hr>
+                        </div>
+                  </div>
+
+
+            </div>
+
+
+
+            <div class="model container">
+                    <div class="modelFiiorm">
+                            <h1 class="section-title">
+                                    Understanding the Model and FiiORM
+                                </h1>
+                                <hr>
+                                <p class="flow-text">
+                                        The model is actually the <span class="highlight">M</span> in MVC which is the layer of the system responsible for representing business logic. The model in codefii follows the <span class="highlight">Active Record</span> pattern using the <span class="highlight">Fiirm</span>, <span class="highlight">fii relational model</span> or <span class="highlight">fiiorm</span>. The aim is to educate developers on how to write and read from database.
+                                </p>
+                                <h1 class="section-title">Object Relational Mapping</h1>
+                               <p class="flow-text">
+                                    The object relational mapping often abbreviated as <span class="highlight">ORM</span> is a technique that connects the rich objects of an application to tables in a relational database management system. Using Fiirm or FiiORM, the properties and relationships of the objects in an application can be easily stored and retrieved from a database without writing SQL statements directly and with less overall database access code even though the Fiirm has made provision for writing SQL statements when neccessary.
+                               </p>
+                                <h1 class="section-title">Fiirm as a framework</h1>
+                                 <p class="flow-text">The Fiirm is flexible and super easy, with several mechanisms of which the most important thing is the ability to:</p>
+                                  <div class="card-panel red lighten-2">
+                                      <span class="white-text flow-text">
+                                            <ul>
+                                                    <li>Represent models and their data</li>
+                                                    <li>Represent association between these models</li>
+                                                    <li>Perform database operations in object oriented fashion.</li>
+                                                    <li>Use a class name as a table name</li>
+                                            </ul>
+                                      </span>
+                                  </div>
+                                 <h1 class="section-title">
+                                     Fiirm and Auth
+                                 </h1>
+                               <p class="flow-text">The auth is a special class that extends to the Fiirm, and is capable of handling or performing the following function:</p>
+                               <div class="card-panel red lighten-2">
+                                    <span class="white-text flow-text">
+                                          <ul>
+                                                  <li>Log Users in</li>
+                                                  <li>Check if user sessions exist</li>
+                                          </ul>
+                                    </span>
+                                </div>
+                                <p class="flow-text">
+                                        Most likely, if you're writing a Model that has to do with just mere CRUD, extending to the Fiirm from your model is advisable. In a case where you want to log a user into your application, the auth class has already save you the stress of writing much code.
+                                
+                                </p>
+                                <h1 class="section-title">
+                                  Creating A Model
+                                </h1>
+
+                                <p class="flow-text"> Models are created in the <span class="highlight">/models</span> directory and extends to either the Fiirm or Auth. In every model class you create, it is advisable to specify the table clumns.</p>
+
+                                <!-- cODE -->
+
+                            
+
+                        <p class="flow-text">The above schema declares a table with five columns <span class="highlight">id</span>, <span class="highlight">title</span>, <span class="highlight">author</span>, <span class="highlight">isbn</span> and <span class="highlight">created_at</span>. Each of this table row represents a certain book with these five parameters.</p>
+                        <!-- cODE -->
+                        <p class="flow-text">
+                                The property $table is optional as Fiirm is capable of using your model name as your base table if it's not specified. The specified $columns property is simply referred to as fillable fields. You can choose to make other fields redundant by setting them to null by defualt and not also including them in the columns property as fillable field. Thus,you would be able to write code like the following:
+                        </p>
+                        <!-- code -->
+                    </div>
+
+                    <h1 class="section-title">Techniques in creating a record</h1>
+                    <p class="flow-text">In the previous chapter we created a Books model and we added a data manually. Now we're going to do more of creating and exploring the various techniques in creating or writing a new record to database using Fiirm, and we are going to trea the following:</p>
+                    <div class="card-panel red lighten-2">
+                            <span class="white-text flow-text">
+                                  <ul>
+                                          <li>Save()</li>
+                                          <li>create()</li>
+                                          <li>createArray()</li>
+                                  </ul>
+                            </span>
+                        </div>
+                    <h1 class="section-title">The Save()</h1>
+                    <p class="flow-text">The save method can be implemented in two ways with the present of primary key attribute $pk, cosider the example in the first chapter as one so we're going to see the second method works.</p>
+                    <pre class="line-numbers" data-start="">
+                            <code class="language-php">
+                            $router = \Codefii\Router\Router();
+                            $router->setNamespace("app\controllers");
+                            $router->get('/',function(){
+                            echo "Prince Darlington";
+                             })
+                  </code>
+             </pre>
+                <p class="flow-text">The conditional statement checks if a record has been created or not, it's always advisable to perform that check especially when you're working on model from your controller.</p>
+                <p class="flow-text"><span class="highlight">NOTE: It's a bad practice to use the isAdded() method in your model, always use it in the controller.</span></p>
+
+                <h1 class="section-title">The Create()</h1>
+                <p class="flow-text">The create() technique works like the save(), the only difference is that if there's already a record with id 1 and you want to add new record with the same id, instead of throwing error, FiiORM immediately execute the find method to decied if data will create or update.</p>
+                <pre class="line-numbers" data-start="">
+                        <code class="language-php">
+                         $books = new Books();
+                         $books->create(['id'=>1,'title'=>'introduction to codefii',
+                        'author'=>'Prince E. Darlington','isbn'=>'php230940'])
+              </code>
+         </pre>
+
+         <h1 class="section-title">Reading/Fetching record</h1>
+        <p class="flow-text">Using thee findAll() technique, you would be able to fetch all the record in a particular table with no exception:</p>
+         <pre class="line-numbers" data-start="">
+                <code class="language-php">
+                        $books = new Books();                    
+                        $all = $books->findAll();
+                        var_dump($all);
+                </code>
+          </pre>
+          <p class="flow-text">The equivalent SQL code of the findAll() technique is given below:</p>
+          <pre class="line-numbers" data-start="">
+                <code class="language-php">
+                       "SELECT * FROM books";
+                </code>
+          </pre>
+          <h1 class="section-title">The FirstOne Technique</h1>
+          <p class="flow-text">The findOne technique is used for displaying record that's specific or belong to one individual.</p>
+          <pre class="line-numbers" data-start="">
+                <code class="language-php">         
+                $books = new Books();
+                $data = $books->findOne(['id'=>1]);
+                </code>
+          </pre>
+          <h1 class="section-title">orderBy Technique</h1>
+          <pre class="line-numbers" data-start="">
+                <code class="language-php">         
+                      
+                 $books = Books();
+                 $datas = $books->find()->orderBy("id","DESC")->limit(2)->all();
+                  foreach($datas as $book){
+                      echo $book->title;
+                  }
+                </code>
+          </pre>
+          <h1 class="section-title">performing relationship</h1>
+          <pre class="line-numbers" data-start="">
+                <code class="language-php">         
+                        $books = new Books();
+                        $datas = $books->relatedTo(
+                        ['id'=>'p_id'],'publishers',"LEFT JOIN"
+                            )->all();
+                        foreach($datas as $data){
+                            echo $data->title;
+                        }
+                    
+                </code>
+          </pre>
+          <h1 class="section-title">findById technique</h1>
+          <pre class="line-numbers" data-start="">
+                <code class="language-php">         
+                        $books = new Books();
+                        $id = $books->findById(1);
+                        var_dump($id);   
+                </code>
+          </pre>
+          <h1 class="section-title">findBy technique</h1>
+          <pre class="line-numbers" data-start="">
+                <code class="language-php">         
+                        $books = new Books();
+                        $datas = $books->findBy(['author'=>'Clinton Nzedima']);
+                        var_dump($datas);
+                </code>
+          </pre>
+        </div>
+      </main>
+
+        <!-- end footer-->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="css/prism.js"></script>
+        <script>
+            $(document).ready(() => {
+                $('.burger').on('click', function () {
+                    $('.left-bar').toggleClass('side')
+                    $(".navbar-burger").toggleClass(".btn-2")
+                });
+                $(".btn-2").click(function () {
+
+                });
+             
+                 $('.sidenav').sidenav();
+
+
+            })
+        </script>
+    </body>
+
+</html>
