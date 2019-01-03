@@ -73,7 +73,7 @@ header.documentation-header, main, footer {
     width:100%;
 }
 .max-width{
-    width:125px;
+    width:120px;
 }
 .small{
     width:100px;
@@ -104,6 +104,13 @@ header.documentation-header, main, footer {
 }
 .spacing{
     margin:0 0 15px 0;
+}
+.spacing-2{
+    padding: 20px 0 5px 0;
+}
+.showcase-area{
+    padding:20px 0 0 0;
+    min-height: 50vh;
 }
 
  .size {
