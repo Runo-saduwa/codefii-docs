@@ -3,6 +3,7 @@
 
     <head>
         <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
@@ -18,66 +19,64 @@
 
     <body class="relative">
       
-      
-        <header class="documentation-header">
-            <nav class="nav-wrapper white">
-                <a href="#" class="brand-logo"><img class="brand-img" src="images/codefii.png"></a>
-                <a href="#" class="black-text sidenav-trigger right" data-target="slide-out"><i class="material-icons black-text">menu</i>
-                      
-                 <ul class="right hide-on-med-and-down">
-                     <li><form action=""><input class="input-field" type="text" placeholder="search"></form></li>
-                        <li><a class="black-text" href="index.html">Home</a></li>
-                     <li><a class="black-text" href="#">Documentation</a></li>
-                        <li><a class="black-text" href="">News</a></li>
-                     <li><a class="black-text" href="#">Team</a></li>
-                 </ul>
-            </nav>
-        </header>
-
-        <ul id="slide-out" class="sidenav sidenav-fixed">
-           <div class="container">
-              <div class="center-align"><form action=""><input class="input-field" type="text" placeholder="search"></form></div>
-                <div class="section-container">
-                        <h5 class="section-heading">Getting Started</h6>
-                            <p><a href="index.html" class="section-child">Home</a></p>
-                            <p><a href="#" class="section-child">Installation</a></p>
-                            <p><a href="#" class="section-child">Database Connection</a></p>
-                            <p><a href="#" class="section-child">Deployment</a></p>
-                            <p><a href="#" class="section-child">Using FiiCii</a></p>
-                            <p><a href="#" class="section-child">APIs</a></p>
-                </div>
-
-                <div class="section-container">
-                        <h5 class="section-heading">The Model</h5>
-                            <p><a href="#" class="section-child">Understanding Model & FiiORM</a></p>
-                            <p><a href="#" class="section-child">Techniques in creating a record</a></p>
-                            <p><a href="#" class="section-child">Reading/Fetching record</a></p>
-                            <p><a href="#" class="section-child">Updating record</a></p>
-                            <p><a href="#" class="section-child">Deleting record</a></p>
-                            <p><a href="#" class="section-child">Using Query Buider</a></p>
-                </div>
-                <div class="section-container">
-                        <h5 class="section-heading">The View</h5>
-                            <p><a href="#" class="section-child">The concepts of view</a></p>
-                            <p><a href="#" class="section-child">Understanding view partials</a></p>
-                            <p><a href="#" class="section-child">Sending data to view</a></p>
-                            <p><a href="#" class="section-child">Using Twig Template</a></p>
-                </div>
-                <div class="section-container">
-                        <h5 class="section-heading">The Controller</h5>
-                            <p><a href="#" class="section-child">Understanding Controller</a></p>
-                </div>
-                <div class="section-container">
-                        <h5 class="section-heading">The Admin</h5>
-                            <p><a href="#" class="section-child">Concepts of CodefiiAdmin</a></p>
-                </div>
-                <div class="section-container">
-                        <h5 class="section-heading">The Routes/Routing</h5>
-                            <p><a href="#" class="section-child">Basics of Routing</a></p>
-                </div>
-           </div>
-        </ul>
-          
+           <header class="documentation-header navbar-fixed">
+                <nav class="nav-wrapper white">
+                    <a href="#" class="brand-logo"><img class="brand-img" src="images/codefii.png"></a>
+                    <a href="#" class="black-text sidenav-trigger right" data-target="slide-out"><i class="material-icons black-text">menu</i>
+                          
+                     <ul class="move-out hide-on-med-and-down">
+                            <li><a class="black-text" href="index.html">Home</a></li>
+                         <li><a class="black-text" href="#">Documentation</a></li>
+                            <li><a class="black-text" href="">News</a></li>
+                         <li><a class="black-text" href="#">Team</a></li>
+                     </ul>
+                </nav>
+            </header>
+    
+            <ul id="slide-out" class="sidenav sidenav-fixed">
+               <div class="container">
+                  <div class="center-align"><form action="" class="input-field"><input class="input-field" type="text" placeholder="search"></form></div>
+                    <div class="section-container">
+                            <h5 class="section-heading">Getting Started</h6>
+                                <p><a href="index.html" class="section-child">Home</a></p>
+                                <p><a href="#" class="section-child">Installation</a></p>
+                                <p><a href="#" class="section-child">Database Connection</a></p>
+                                <p><a href="#" class="section-child">Deployment</a></p>
+                                <p><a href="#" class="section-child">Using FiiCii</a></p>
+                                <p><a href="#" class="section-child">APIs</a></p>
+                    </div>
+    
+                    <div class="section-container">
+                            <h5 class="section-heading">The Model</h5>
+                                <p><a href="#" class="section-child">Understanding Model & FiiORM</a></p>
+                                <p><a href="#" class="section-child">Techniques in creating a record</a></p>
+                                <p><a href="#" class="section-child">Reading/Fetching record</a></p>
+                                <p><a href="#" class="section-child">Updating record</a></p>
+                                <p><a href="#" class="section-child">Deleting record</a></p>
+                                <p><a href="#" class="section-child">Using Query Buider</a></p>
+                    </div>
+                    <div class="section-container">
+                            <h5 class="section-heading">The View</h5>
+                                <p><a href="#" class="section-child">The concepts of view</a></p>
+                                <p><a href="#" class="section-child">Understanding view partials</a></p>
+                                <p><a href="#" class="section-child">Sending data to view</a></p>
+                                <p><a href="#" class="section-child">Using Twig Template</a></p>
+                    </div>
+                    <div class="section-container">
+                            <h5 class="section-heading">The Controller</h5>
+                                <p><a href="#" class="section-child">Understanding Controller</a></p>
+                    </div>
+                    <div class="section-container">
+                            <h5 class="section-heading">The Admin</h5>
+                                <p><a href="#" class="section-child">Concepts of CodefiiAdmin</a></p>
+                    </div>
+                    <div class="section-container">
+                            <h5 class="section-heading">The Routes/Routing</h5>
+                                <p><a href="#" class="section-child">Basics of Routing</a></p>
+                    </div>
+               </div>
+            </ul>
+              
 
       <main>
             <div class="main introduction container">
@@ -187,7 +186,7 @@
                                </p>
                                 <h1 class="section-title">Fiirm as a framework</h1>
                                  <p class="flow-text">The Fiirm is flexible and super easy, with several mechanisms of which the most important thing is the ability to:</p>
-                                  <div class="card-panel red lighten-2">
+                                  <div class="card card-panel">
                                       <span class="white-text flow-text">
                                             <ul>
                                                     <li>Represent models and their data</li>
@@ -330,7 +329,328 @@
                 </code>
           </pre>
         </div>
+          
+         <div class="container">
+             <h1 class="section-title">Updating Record</h1>
+             <hr>
+             <p class="flow-text">
+                    The update technique is very easy and straightforward provided you know the <span class="highlight">id</span> of the record you want to update.The update technique only accept accociative array of which the first key and value are known as the <span class="highlight">active properties</span>. In our case <span class="highlight">active properties</span> represents the id or primary key column in your table. From our previous chapters the author name was set to <span class="highlight">Prince E. Darlington</span>, let's try updating it to use <span class="highlight">Clinton Nzedima</span> as the new author name.
+             </p>
+<pre class="line-numbers" data-start="">
+<code class="language-php">         
+$books = new Books();
+$books->Update(['id'=>1,'author'=>'Clinton Nzedima']);
+</code>
+</pre>
+    <p class="flow-text">The SQL intepretation of the above snippet is:</p>
+<pre class="line-numbers" data-start="">
+<code class="language-php">         
+"UPDATE books SET author='Clinton Nzedima' WHERE id=1";
+</code>
+</pre>
+      <h1 class="section-title">Updating Multiple Field in a Record</h1>
+      <p class="flow-text">Let's try updating <span class="highlight">title</span> and <span class="highlight">author</span> column by setting them to <span class="highlight">Introduction to codefii</span> and <span class="highlight"> Clinton Nzedima</span> respectively.</p>
+<pre class="line-numbers" data-start="">
+<code class="language-php">         
+$books = new Books();
+$books->update(['id'=>1,'author'=>'Clinton Nzedima','title'=>'Introduction to codefii']);
+</code>
+</pre>
+
+ <h1 class="section-title">Deleting Record from Database</h1>
+ <hr>
+<pre class="line-numbers" data-start="">
+<code class="language-php">         
+$books = new Books();
+$delete = $books->delete(['id'=>1]);
+</code>
+</pre>
+ <pre class="line-numbers" data-start="">
+<code class="language-php">         
+"DELETE * FROM books WHERE id =1";
+</code>
+</pre>
+
+<h1 class="section-title">Using Query Builder</h1>
+<p class="flow-text">Query builder is a way of writing the native SQL statement to perform a RDBMS task in an application.</p>
+<pre class="line-numbers" data-start="">
+<code class="language-php">         
+$books = new Books();
+$delete = $books->delete(['id'=>1]);
+</code>
+</pre>
+ <pre class="line-numbers" data-start="">
+<code class="language-php">         
+$books = new Books();
+$book= $books->query("SELECT  * FROM books");
+
+echo $book->title;
+</code>
+</pre>
+<p class="flow-text">The above code will print out the book title from database.</p>
+</div>
+
+
+   <!-- View part -->
+    <div class="container">
+        <h1 class="section-title">Creating And Rendering The View</h1>
+        <hr>
+        <p class="flow-text">The MVC (model-view-controller) architecture is designed in such a way that different experts can work on one project at the same time without any kind of complications. The view as the name implies is the physical component of any <span class="highlight">App</span> of which users relate with quickly. The view directory where pages are stored is located in the <span class="hightlight">/templates</span> directory.</p>
+        <p class="flow-text">There two ways to use view in codefii, one is by using the defualt view from the controller class. example:</p>
+<pre class="line-numbers" data-start="">
+<code class="language-php">         
+class Test extends Controller {
+      public function inex(){
+      return $this->view(['Pages/hello','Pages/partial']);
+     }
+}
+</code>
+</pre>
+<p class="flow-text">Another way to use view is by importing the View class from the <span class="highlight">Core</span> directory</p>
+<pre class="line-numbers" data-start="">
+<code class="language-php">         
+use Core\View\View;
+class Test extends Controller{
+       public function index(){
+        View::render('Pages/index');
+       }
+}
+</code>
+</pre>
+<p class="flow-text">When using <span class="highlight">View::render();</span> function, your view files likely to be a <span class="highlight">.php</span> file likewise <span class="highlight">$this->view();</span> otherwise it might not work as expected.</p>
+
+<h1 class="section-title">Creating View</h1>
+<p class="flow-text">Let's do a more practical example by creating <span class="highlight">base.html</span> in the <span class="hightlight">/templates</span> directory alongside with the following code</p>
+<pre class="line-numbers" data-start=""><code class="language-php">hello</code></pre>
+
+<h1 class="section-title">Understanding View Partials</h1>
+<p class="flow-text">I know most php programmers are familiar with the use of <span class="highlight">require</span>, ever since the web started growing drastically, the arrangment of files on the web has also change thereby making it easier to manage. These files has been seperated into components for reusability sake. In the codefii, a mere html file is seperated into four parts namely.</p>
+ <!-- info card -->
+ <div class="card-panel red lighten-2">
+        <span class="white-text flow-text">
+              <ul>
+                      <li>Partial</li>
+                      <li>Header</li>
+                      <li>Body</li>
+                      <li>Footer</li>
+              </ul>
+        </span>
+    </div>
+ <!-- end of info card -->
+ <h1 class="section-title">Partial</h1>
+ <p class="flow-text">Partial or partials is the first file read by the server whenever a given url is called. For instance, the <span class="highlight">meta tag</span>, <span class="highlight">link tag</span>, <span class="highlight">title tag</span> and etc. These set of tags are known as the partial tags because they probably remain unchanged on every page, but sometimes only the <span class="highlight">title</span> keeps changing as page changes; so in Codefii they are treated seperately.</p>
+<pre class="line-numbers" data-start="">
+<code class="language-php">         
+class Hello extends Controller {
+     public function index(){
+      return $this->view(["Pages/index","Pages/partial"]);
+    }
+}
+</code>
+</pre>
+<h1 class="section-title">Header</h1>
+<p class="flow-text">With no much words, the header in this context is reffered to as <span class="highlight">Navigation Menu</span>. Every unique website mentains one navigation menu that's why we choose to call it <span class="highlight">Header</span> in codefii, and it's located in the <span class="highlight">/header</span> directory. Every Header is pre-configured in the <span class="highlight">Codefii/Controllers/Controller.php</span> file for dynamic loading i.e</p>
+<pre class="line-numbers" data-start="">
+<code class="language-php">         
+namespace Codefii\Controllers;
+use Core\Controller\BaseController;
+abstract class Controller extends BaseController{
+    public function init(){
+        $this->setHeader("header/header"); //always create a constructor
+  }
+}
+</code>
+</pre>
+
+<h1 class="section-title">Body</h1>
+<p class="flow-text">Well i planned on skipping this part because an average web developershould know that a body means. perherps incase you feel our usage of body is completely different from what you know, it's actually the same. In my case, all my body files are located in <span class="highlight">templates/Pages/</span>. If you feel like doing the same then thumbs up for you, you're not alone i got you in this.</p>
+<pre class="line-numbers" data-start="">
+<code class="language-php">         
+class Hello extends Controller {
+    public function index(){
+     return $this->view(["Pages/hello","Pages/partials"],['title'=>'Your page title']);
+    }
+}
+</code>
+</pre>
+<h1 class="section-title">Footer</h1>
+<p class="flow-text">Lastly before moving to the next tips, the footer is the same as what you know, but the difference is that it's pre-configured for dynamic usage like the header by the use of <span class="highlight">$this->setFooter()</span> method.</p>
+<pre class="line-numbers" data-start="">
+<code class="language-php"> 
+namespace Codefii\Controllers;
+use Core\Controller\BaseController;
+abstract class Controller extends BaseController{
+          public function init(){
+            $this->setFooter("footer/footer"); //always create a constructor
+        }
+ }              
+</code>
+</pre>
+
+<h1 class="section-title">Sending data to View</h1>
+<hr>
+<p class="flow-text">
+        When using the <span class="hightlight">View::render()</span> or <span class="highlight">$this->view()</span> function, data can be sent to the view inform of an array i.e, let's pass in an hello world text to a view file called <span class="highlight">welcome.php</span> with the following code. The first part of the code goes into the controller, while the second goes into the <span class="highlight">welcome.php</span> file.
+</p>
+
+<pre class="line-numbers" data-start="">
+<code class="language-php"> 
+namespace App\Controllers;
+use App\Controllers\Controller;
+    class GreetController extends Controller {
+        public function index(){
+        return $this->view(["Pages/welcome","Pages/partial"
+        ['data'=>'Hello World!']);
+    }
+}
+</code>
+</pre>
+
+<p class="flow-text">Open up <span class="highlight">welcome.php</span> and add the following:</p>
+<pre class="line-numbers" data-start=""><code class="language-php">echo $data</code></pre>
+<p class="flow-text">When you open up your browser you're expected to see <span class="highlight">Hello World!</span> printed on the screen, that shows that it did worked.</p>
+ <h1 class="section-title">Setting Page Title</h1>
+ <p class="flow-text">
+        Don't forget that every new method you create serve as a page name. The view file sees every data that's send to it so it doesn't matter what text you choose to send to the view, it is where you choose to print out the sent data that matters. Let's create a simple html skeleton with <span class="highlight">title</span>. Create any page of your choose <span class="highlight">.php</span>, but in my case am using <span class="highlight">test.php</span> so add the below code in between the opening and the closing of your <span class="highlight">title tag</span>.
+ </p>
+
+ <p class="flow-text">Then after that, go to your controller and add the following code to your method. For the dake of the documentation, i would use <span class="highlight">index</span>.</p>
+ <pre class="line-numbers" data-start="">
+<code class="language-php"> 
+class Test extends Controller {
+      public function index(){
+      return $this->view(
+      ['Pages/welcome','Pages/partial'],
+      ['title'=>'Welcome to my first page!']
+    );
+  }
+}      
+</code>
+</pre>
+
+<p class="flow-text">One you visit <span class="highlight">yourwebsite.com/ or localhost:8080/</span> you would see welcomet to my first page! as your title and a blank screen, that shows your view is working, cheers!</p>
+  <h1 class="section-title">Using Twig Template</h1>
+  <p class="flow-text">Twig is a template engine written with php by the <span class="highlight">symfony</span> developer team. Template engine in the other hand makes work pretty much easier by optmizing our usual method of organizing files on the web server.</p>
+<pre class="line-numbers" data-start=""><code class="language-php">View::renderTemplate("Pages/index.html");</code></pre>
+
+<h1 class="section-title">Namespace</h1>
+<p class="flow-text">Namespacing or namespace is a way of defining the location of a php file with class autoloading. For instance, in Codefii, your controller code is location in the <span class="highlight">App/controllers</span>.</p>
+
+<h1 class="section-title">Understanding the Controller</h1>
+<p class="flow-text">Action Controller is the <span class="highlight">C</span> in <span class="highlight">MVC</span>. After the router has determined which controller to use for a request, the controller is responsible for making sense of the request, and producing the appropriate output. Luckily, Action Controller does most of the groundwork for you and uses smart conventions to make this as straightforward as possible.</p>
+<p class="flow-text">A controller can thus be thought of as a middleman between models and views. It makes the model data available to the view so it can display that data to the user, and it saves or updates user data to the model.</p>
+<h1 class="section-title">Controller Naming</h1>
+<p class="flow-text">A controller in Codefii is just like the normal class naming in php, but qualifying your class name with <span class="highlight">Controller</span> allows you to use the default class name in route without attaching controller prefix alongside.</p>
+<h1 class="section-title">Methods And Actions</h1>
+<p class="flow-text">Controllers on Codefii are meant to inhrerit from <span class="highlight">Controller</span> and has method just like any class in php. Methods are executed when the controller recieves a request, then Codefii creates an instance of runs the method called in the route</p>
+<pre class="line-numbers" data-start="">
+<code class="language-php"> 
+use App\controllers\Controller;
+class HomeController extends Controller{
+       public function firstPage(){
+        echo "this is my first page";
+     }
+}
+</code>
+</pre>
+<p class="flow-text">If a user goes to <span class="highlight">Home/firstPage</span> in your application, Codefii will create and instance of HomeController and call its firstPage method.</p>
+
+<h1 class="section-title">Query String Parameters</h1>
+<p class="flow-text">You will probably want to access data sent in by the user or other parameters in your controller through query string parameters which refers to those parameters that are sent as part of the URL. <span class="highlight">https://codefii.com/users?author=prince+darlington</span></p>
+<pre class="line-numbers" data-start="">
+<code class="language-php"> 
+use Codefii\Http\Request;
+ Class HomeController extends Controller{
+    public function users(){
+    echo Request::get('author');
+    }
+}       
+</code>
+</pre>
+<h1 class="section-title">Getting Routes Parameter</h1>
+<p class="flow-text">Route parameter is a set of rules defined for checking valid URL query string using regular expression. You may have a regex defined as <span class="highlight">{id:([a-zA-z0-9])*}</span> in your routes as:</p>
+<p class="flow-text"><span class="highlight">$router->routes('/prince/{id:([a-zA-z0-9])*}')</span></p>
+
+<p class="flow-text">which means that if a user goes to <span class="highlight">/Home/LsldfnfK34</span> (the characters after the last first slahes after prince is an assumed id), while your controller has:</p>
+<pre class="line-numbers" data-start="">
+<code class="language-php"> 
+ Class HomeController extends Controller {
+    public function hello(){
+     echo $this->route_params['id'];
+   }
+}
+</code>
+</pre>
+<p class="flow-text">The output of the above code would be: <span class="highlight">LsldfnfK34</span> or characters you pass into the url.</p>
+<h1 class="section-title">POST Data Parameter</h1>
+<p class="flow-text">This information usually comes from an HTML form which has been filled in by the user. It's called POST data because it can only be sent as part of an HTTP POST request.</p>
+<pre class="line-numbers" data-start="">
+<code class="language-php"> 
+use App\Controllers\Controller;
+use Codefii\Http\Request;
+Class HomeController extends Controller{
+    //form method="post" action="/home/hello"
+    if(Request::exists()){
+    //do something
+    }else{
+    //do something
+    }             
+}
+</code>
+</pre>
+<h1 class="section-title">Codefii Admin</h1>
+<p class="flow-text">The Codefii admin is a generic admin package that helps in managing model datas, and thus give a fully functional user interface for proper management. Every model created is expected to be added to the <span class="highlight">/refigisters/Registers.php</span> so that codefii administrator would automatically load the</p>
+<pre class="line-numbers" data-start="">
+<code class="language-php"> 
+ $Registers = [
+  "Books"=>"books"
+];
+</code>
+</pre>
+<p class="flow-text">In the above snippet, <span class="highlight">Books</span> is a model name while <span class="highlight">books</span> is an SQL table. You can choose to name your model anything provided that its exist.Afterwhich a model is defined, visit <span class="highlight">localhost:8080/admin</span> to view the propertiesof the registered model.</p>
+
+<h1 class="section-title">Routing</h1>
+<p class="flow-text">The codefii router recognizes URLs and dispatches them to a controller's action or method. It can also generate paths and URLs, avoiding the need to hardcode strings in your views.</p>
+<h1 class="section-title">Coonecting URLs</h1>
+<pre class="line-numbers" data-start=""><code class="language-php">$router->routes('/',['YourControllerName@method']);</code></pre>
+
+<p class="flow-text">
+        In Codefii routing, there's no need to attach the prefix <span class="highlight">Controller</span> to the controller name i.e  <span class="highlight">Note: Never write a controller like this: HomeController@method</span> in your route, but rather, this is advisable <span class="highlight">Home@method</span>
+</p>
+<h1 class="section-title">Routing With Namespace</h1>
+<p class="flow-text">
+        In a case where you want to change your controllers' default folder to something different, there's always a need to register it in your route thereby telling the rout the location of the class and its method.
+</p>
+<pre class="line-numbers" data-start=""><code class="language-php">$router->routes('/',['Admin\\Home@index']);</code></pre>
+<p class="flow-text">The above code tells the route to use <span class="highlight">Admin</span> as the namespace, meaning that your new folder structure would look like this: <span class="highlight">App/Controllers/Admin/</span>.</p>
+
+<h1 class="section-title">Routing With Parameters</h1>
+<pre class="line-numbers" data-start=""><code class="language-php">$router->routes('/posts/{id:([a-zA-Z0-9])}',['Home@index']);</code></pre>
+<pre class="line-numbers" data-start="">
+<code class="language-php">
+class HomeController extends Controller{
+       public function index(){
+       echo $this->route_params['id'];
+    }
+}
+</code>
+</pre>
+<p class="flow-text">If you visit <span class="highlight">localhost:8080/post/anytStringWithNumbers</span>, you likely to a string printed to the screen.</p>
+<h1 class="section-title">Redirect</h1>
+<pre class="line-numbers" data-start="">
+<code class="language-php">
+use Codefii\Http\Response;
+   class HomeController extends Controller{
+   public function index(){
+       Response::redirect('anotherPage');
+   }
+}
+</code>
+</pre>
+</div>
       </main>
+ <!-- footer -->
+     
 
         <!-- end footer-->
         <script src="js/jquery-3.3.1.min.js"></script>

@@ -1,3 +1,7 @@
+html, body{
+    overflow-x: hidden;
+}
+
 header.documentation-header, main, footer {
     padding-left: 300px;
   }
@@ -12,16 +16,24 @@ header.documentation-header, main, footer {
 .center-flex a{
     margin:0 10px 0 10px;
 }
-.mx-auto{
+.side-form{
+    display: block;
     width:100%;
-   margin:0 auto;
 }
-
+.doc-nav{
+    position: fixed;
+}
 .brand-img{
     margin: 10px 0 0 10px;
     width:50px;
 }
-
+.move-out{
+    /* margin-left:-200px; */
+    margin-left:500px !important;
+}
+.clearfix{
+    clear: both;
+}
 .section-heading{
     font-size: 1.17rem !important;
     font-weight: 600;
@@ -46,7 +58,7 @@ header.documentation-header, main, footer {
     color:#fff;
 }
 .highlight{
-    color:red;
+    color:rgb(237, 47, 89);
     font-weight: 600;
 }
 .code{
@@ -61,22 +73,26 @@ header.documentation-header, main, footer {
     width:100%;
 }
 .max-width{
-    width:150px;
+    width:125px;
+}
+.small{
+    width:100px;
+    height:100px;
 }
 .rounded{
     border-radius: 15px;
 }
 .section-spacing{
-    padding: 100px 0 60px 0;
+    padding: 60px 0 60px 0;
     margin-top:50px;
 }
-.input-field input[type=text]:focus{
-    border-bottom: 1px solid red !important;
-    box-shadow: 0 1px 0 0 #000 !important;
+.section-spacing-2{
+    padding: 15px 0 30px 0;
 }
+
 .nav-wrapper li a:hover{
     background: #fff !important;
-   border-bottom: 3px solid red !important;
+   border-bottom: 3px solid rgb(237, 47, 89) !important;
 }
 .home{
     padding:30px 0 50px 0;
@@ -84,6 +100,48 @@ header.documentation-header, main, footer {
 .spacing{
     margin:0 0 15px 0;
 }
+
+ .size {
+     margin: 0 auto;
+    max-width: 600px;
+  
+ }
+
+ .medium {
+     font-size:large;
+     font-weight: 500;
+ }
+
+  .size img{
+    width:100%;
+ }
+ .codefii-color{
+     background: rgb(237, 47, 89);
+ }
+
+ .codefii-color:hover{
+     background: rgba(237, 47, 89, 0.9)
+ }
+
+ footer{
+     padding: 20px;
+ }
+ .footer-img{
+     width:40px;
+     float:right;
+ }
+
+ /* input color */
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid rgb(237, 47, 89) !important;
+    box-shadow: 0 1px 0 0 rgb(237, 47, 89) !important;
+  }
+    
+.card-panel{
+    background: rgba(237, 47, 89, 0.5) !important;
+}
+
 @media (min-width:770px){
     .code{
         width:60%;
