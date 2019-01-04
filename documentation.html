@@ -2,17 +2,14 @@
 <html>
 
     <head>
+        <meta name="theme-color" content="rgb(237, 47, 89)">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Thasadith" rel="stylesheet">
         <!--Import materialize.css-->
         <link rel="stylesheet" href="css/prism.css">
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/materialize.css">
-        <!-- <link rel="stylesheet" href="css/bulma.css"> -->
-        <link rel="stylesheet" href="css/ionicons.css">
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
@@ -38,42 +35,80 @@
                     <div class="center-align spacing-2 hide-on-med-and-up"><a href="#" class="brand-logo"><img class="brand-img" src="images/codefii.png"></a></div>
                   <div class="center-align"><form action="" class="input-field"><input class="input-field" type="text" placeholder="search"></form></div>
                     <div class="section-container">
-                            <h5 class="section-heading">Getting Started</h6>
-                                <p><a href="index.html" class="section-child">Home</a></p>
-                                <p><a href="#" class="section-child">Installation</a></p>
-                                <p><a href="#" class="section-child">Database Connection</a></p>
-                                <p><a href="#" class="section-child">Deployment</a></p>
-                                <p><a href="#" class="section-child">Using FiiCii</a></p>
-                                <p><a href="#" class="section-child">APIs</a></p>
+
+                        <ul class="collapsible">
+                            <li>
+                                <div class="section-heading collapsible-header">Getting Started</div>
+                                <div class="collapsible-body">
+                                        <a href="index.html" class="section-child">Home</a><br>
+                                        <a href="#" class="section-child">Installation</a><br>
+                                        <a href="#" class="section-child">Database Connection</a><br>
+                                        <a href="#" class="section-child">Deployment</a><br>
+                                        <a href="#" class="section-child">Using FiiCii</a><br>
+                                        <a href="#" class="section-child">APIs</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
     
                     <div class="section-container">
-                            <h5 class="section-heading">The Model</h5>
-                                <p><a href="#" class="section-child">Understanding Model & FiiORM</a></p>
-                                <p><a href="#" class="section-child">Techniques in creating a record</a></p>
-                                <p><a href="#" class="section-child">Reading/Fetching record</a></p>
-                                <p><a href="#" class="section-child">Updating record</a></p>
-                                <p><a href="#" class="section-child">Deleting record</a></p>
-                                <p><a href="#" class="section-child">Using Query Buider</a></p>
+                            <ul class="collapsible">
+                                    <li>
+                                        <div class="section-heading collapsible-header">The Model</div>
+                                        <div class="collapsible-body">
+                                              <a href="#" class="section-child">Understanding Model & FiiORM</a><br>
+                                              <a href="#" class="section-child">Techniques in creating a record</a><br>
+                                              <a href="#" class="section-child">Reading/Fetching record</a><br>
+                                              <a href="#" class="section-child">Updating record</a><br>
+                                              <a href="#" class="section-child">Deleting record</a><br>
+                                              <a href="#" class="section-child">Using Query Buider</a><br>
+                                        </div>
+                                    </li>
+                                </ul>
                     </div>
                     <div class="section-container">
-                            <h5 class="section-heading">The View</h5>
-                                <p><a href="#" class="section-child">The concepts of view</a></p>
-                                <p><a href="#" class="section-child">Understanding view partials</a></p>
-                                <p><a href="#" class="section-child">Sending data to view</a></p>
-                                <p><a href="#" class="section-child">Using Twig Template</a></p>
+                            <ul class="collapsible">
+                                    <li>
+                                        <div class="section-heading collapsible-header">The View</div>
+                                        <div class="collapsible-body">
+                                                <a href="#" class="section-child">The concepts of view</a><br>
+                                                <a href="#" class="section-child">Understanding view partials</a><br>
+                                                <a href="#" class="section-child">Sending data to view</a><br>
+                                                <a href="#" class="section-child">Using Twig Template</a><br>
+                                        </div>
+                                    </li>
+                                </ul>
                     </div>
                     <div class="section-container">
-                            <h5 class="section-heading">The Controller</h5>
-                                <p><a href="#" class="section-child">Understanding Controller</a></p>
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="section-heading collapsible-header">The Controller</div>
+                                     <div class="collapsible-body">
+                                        <a href="#" class="section-child">Understanding Controller</a><br> 
+                                    </div>
+                                </li>
+                            </ul>
                     </div>
                     <div class="section-container">
-                            <h5 class="section-heading">The Admin</h5>
-                                <p><a href="#" class="section-child">Concepts of CodefiiAdmin</a></p>
+                            <ul class="collapsible">
+                                    <li>
+                                        <div class="section-heading collapsible-header">The Admin</div>
+                                         <div class="collapsible-body">
+                                                <a href="#" class="section-child">Concepts of CodefiiAdmin</a>
+                                        </div>
+                                    </li>
+                                </ul>
                     </div>
                     <div class="section-container">
-                            <h5 class="section-heading">The Routes/Routing</h5>
-                                <p><a href="#" class="section-child">Basics of Routing</a></p>
+                            <ul class="collapsible">
+                                    <li>
+                                        <div class="section-heading collapsible-header">The Routes/Routing</div>
+                                         <div class="collapsible-body">
+                                                <a href="#" class="section-child">Basics of Routing</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                    
                     </div>
                </div>
             </ul>
@@ -201,7 +236,7 @@
                                      Fiirm and Auth
                                  </h1>
                                <p class="flow-text">The auth is a special class that extends to the Fiirm, and is capable of handling or performing the following function:</p>
-                               <div class="card-panel red lighten-2">
+                               <div class="card card-panel">
                                     <span class="white-text flow-text">
                                           <ul>
                                                   <li>Log Users in</li>
@@ -233,7 +268,7 @@
 
                     <h1 class="section-title">Techniques in creating a record</h1>
                     <p class="flow-text">In the previous chapter we created a Books model and we added a data manually. Now we're going to do more of creating and exploring the various techniques in creating or writing a new record to database using Fiirm, and we are going to trea the following:</p>
-                    <div class="card-panel red lighten-2">
+                    <div class="card card-panel">
                             <span class="white-text flow-text">
                                   <ul>
                                           <li>Save()</li>
@@ -427,7 +462,7 @@ class Test extends Controller{
 <h1 class="section-title">Understanding View Partials</h1>
 <p class="flow-text">I know most php programmers are familiar with the use of <span class="highlight">require</span>, ever since the web started growing drastically, the arrangment of files on the web has also change thereby making it easier to manage. These files has been seperated into components for reusability sake. In the codefii, a mere html file is seperated into four parts namely.</p>
  <!-- info card -->
- <div class="card-panel red lighten-2">
+ <div class="card-panel">
         <span class="white-text flow-text">
               <ul>
                       <li>Partial</li>
@@ -676,6 +711,7 @@ use Codefii\Http\Response;
                 });
              
                  $('.sidenav').sidenav();
+                 $('.collapsible').collapsible();
 
 
             })
