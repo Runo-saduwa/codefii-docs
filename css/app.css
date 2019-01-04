@@ -75,6 +75,10 @@ header.documentation-header, main, footer {
 .max-width{
     width:120px;
 }
+hr-style {
+    max-width:20px !important;
+    color:#fff;
+}
 .small{
     width:100px;
     height:100px;
@@ -128,11 +132,14 @@ header.documentation-header, main, footer {
     width:100%;
  }
  .codefii-color{
-     background: rgb(237, 47, 89);
+     background: rgb(237, 47, 89) !important;
  }
 
  .codefii-color:hover{
-     background: rgba(237, 47, 89, 0.9)
+     background: rgba(237, 47, 89, 0.9) !important;
+ }
+ .codefii-color:active{
+     background: rgba(237, 47, 89, 0.9) !important;
  }
 
  footer{
